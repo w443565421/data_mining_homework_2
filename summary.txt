@@ -1,0 +1,21 @@
+transactions as itemMatrix in sparse format with
+ 120 rows (elements/itemsets/transactions) and
+ 11 columns (items) and a density of 0.3916667 
+
+most frequent items:
+      urine      lumbar     bladder micturition        high     (Other) 
+         80          70          59          59          50         199 
+
+element (itemset/transaction) length distribution:
+sizes
+ 1  2  3  4  5  7  8 
+10 20 10 10 51 10  9 
+
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   2.750   5.000   4.308   5.000   8.000 
+
+includes extended item information - examples:
+   labels
+1 bladder
+2    high
+3     low

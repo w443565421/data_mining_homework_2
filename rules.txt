@@ -1,0 +1,147 @@
+Apriori
+
+Parameter specification:
+ confidence minval smax arem  aval originalSupport support minlen maxlen
+        0.5    0.1    1 none FALSE            TRUE     0.1      3      8
+ target   ext
+  rules FALSE
+
+Algorithmic control:
+ filter tree heap memopt load sort verbose
+    0.1 TRUE TRUE  FALSE TRUE   -1    TRUE
+
+Absolute minimum support count: 12 
+
+set item appearances ...[2 item(s)] done [0.00s].
+set transactions ...[11 item(s), 120 transaction(s)] done [0.00s].
+sorting and recoding items ... [10 item(s)] done [0.00s].
+creating transaction tree ... done [0.00s].
+checking subsets of size 1 2 3 4 5 6 done [0.00s].
+writing ... [62 rule(s)] done [0.00s].
+creating S4 object  ... done [0.00s].
+   lhs                                       rhs         support  
+1  {lumbar,urine}                         => {nephritis} 0.3333333
+2  {micturition,urine}                    => {bladder}   0.4083333
+3  {urethra,urine}                        => {bladder}   0.2416667
+4  {high,urine}                           => {bladder}   0.1583333
+5  {low,urine}                            => {bladder}   0.2500000
+6  {nausea,urine}                         => {bladder}   0.1583333
+7  {urethra,urine}                        => {nephritis} 0.2500000
+8  {high,urine}                           => {nephritis} 0.2500000
+9  {nausea,urine}                         => {nephritis} 0.1583333
+10 {lumbar,micturition}                   => {bladder}   0.1583333
+11 {lumbar,micturition}                   => {nephritis} 0.2416667
+12 {lumbar,nausea}                        => {bladder}   0.1583333
+13 {lumbar,urethra}                       => {nephritis} 0.2500000
+14 {high,lumbar}                          => {nephritis} 0.3333333
+15 {lumbar,nausea}                        => {nephritis} 0.2416667
+16 {micturition,urethra}                  => {bladder}   0.2416667
+17 {high,micturition}                     => {bladder}   0.1583333
+18 {low,micturition}                      => {bladder}   0.1666667
+19 {micturition,nausea}                   => {bladder}   0.1583333
+20 {high,micturition}                     => {nephritis} 0.2416667
+21 {micturition,nausea}                   => {nephritis} 0.2416667
+22 {high,nausea}                          => {bladder}   0.1583333
+23 {high,urethra}                         => {nephritis} 0.1666667
+24 {high,nausea}                          => {nephritis} 0.2416667
+25 {lumbar,micturition,urine}             => {bladder}   0.1583333
+26 {lumbar,micturition,urine}             => {nephritis} 0.1583333
+27 {high,lumbar,urine}                    => {bladder}   0.1583333
+28 {lumbar,nausea,urine}                  => {bladder}   0.1583333
+29 {lumbar,urethra,urine}                 => {nephritis} 0.2500000
+30 {high,lumbar,urine}                    => {nephritis} 0.2500000
+31 {lumbar,nausea,urine}                  => {nephritis} 0.1583333
+32 {micturition,urethra,urine}            => {bladder}   0.2416667
+33 {high,micturition,urine}               => {bladder}   0.1583333
+34 {low,micturition,urine}                => {bladder}   0.1666667
+35 {micturition,nausea,urine}             => {bladder}   0.1583333
+36 {high,micturition,urine}               => {nephritis} 0.1583333
+37 {micturition,nausea,urine}             => {nephritis} 0.1583333
+38 {high,nausea,urine}                    => {bladder}   0.1583333
+39 {high,urethra,urine}                   => {nephritis} 0.1666667
+40 {high,nausea,urine}                    => {nephritis} 0.1583333
+41 {high,lumbar,micturition}              => {bladder}   0.1583333
+42 {lumbar,micturition,nausea}            => {bladder}   0.1583333
+43 {high,lumbar,micturition}              => {nephritis} 0.2416667
+44 {lumbar,micturition,nausea}            => {nephritis} 0.2416667
+45 {high,lumbar,nausea}                   => {bladder}   0.1583333
+46 {high,lumbar,urethra}                  => {nephritis} 0.1666667
+47 {high,lumbar,nausea}                   => {nephritis} 0.2416667
+48 {high,micturition,nausea}              => {bladder}   0.1583333
+49 {high,micturition,nausea}              => {nephritis} 0.2416667
+50 {high,lumbar,micturition,urine}        => {bladder}   0.1583333
+51 {lumbar,micturition,nausea,urine}      => {bladder}   0.1583333
+52 {high,lumbar,micturition,urine}        => {nephritis} 0.1583333
+53 {lumbar,micturition,nausea,urine}      => {nephritis} 0.1583333
+54 {high,lumbar,nausea,urine}             => {bladder}   0.1583333
+55 {high,lumbar,urethra,urine}            => {nephritis} 0.1666667
+56 {high,lumbar,nausea,urine}             => {nephritis} 0.1583333
+57 {high,micturition,nausea,urine}        => {bladder}   0.1583333
+58 {high,micturition,nausea,urine}        => {nephritis} 0.1583333
+59 {high,lumbar,micturition,nausea}       => {bladder}   0.1583333
+60 {high,lumbar,micturition,nausea}       => {nephritis} 0.2416667
+61 {high,lumbar,micturition,nausea,urine} => {bladder}   0.1583333
+62 {high,lumbar,micturition,nausea,urine} => {nephritis} 0.1583333
+   confidence lift    
+1  1.0000000  2.400000
+2  1.0000000  2.033898
+3  0.5800000  1.179661
+4  0.6333333  1.288136
+5  1.0000000  2.033898
+6  1.0000000  2.033898
+7  0.6000000  1.440000
+8  1.0000000  2.400000
+9  1.0000000  2.400000
+10 0.6551724  1.332554
+11 1.0000000  2.400000
+12 0.6551724  1.332554
+13 1.0000000  2.400000
+14 1.0000000  2.400000
+15 1.0000000  2.400000
+16 1.0000000  2.033898
+17 0.6551724  1.332554
+18 1.0000000  2.033898
+19 0.6551724  1.332554
+20 1.0000000  2.400000
+21 1.0000000  2.400000
+22 0.6551724  1.332554
+23 1.0000000  2.400000
+24 1.0000000  2.400000
+25 1.0000000  2.033898
+26 1.0000000  2.400000
+27 0.6333333  1.288136
+28 1.0000000  2.033898
+29 1.0000000  2.400000
+30 1.0000000  2.400000
+31 1.0000000  2.400000
+32 1.0000000  2.033898
+33 1.0000000  2.033898
+34 1.0000000  2.033898
+35 1.0000000  2.033898
+36 1.0000000  2.400000
+37 1.0000000  2.400000
+38 1.0000000  2.033898
+39 1.0000000  2.400000
+40 1.0000000  2.400000
+41 0.6551724  1.332554
+42 0.6551724  1.332554
+43 1.0000000  2.400000
+44 1.0000000  2.400000
+45 0.6551724  1.332554
+46 1.0000000  2.400000
+47 1.0000000  2.400000
+48 0.6551724  1.332554
+49 1.0000000  2.400000
+50 1.0000000  2.033898
+51 1.0000000  2.033898
+52 1.0000000  2.400000
+53 1.0000000  2.400000
+54 1.0000000  2.033898
+55 1.0000000  2.400000
+56 1.0000000  2.400000
+57 1.0000000  2.033898
+58 1.0000000  2.400000
+59 0.6551724  1.332554
+60 1.0000000  2.400000
+61 1.0000000  2.033898
+62 1.0000000  2.400000
